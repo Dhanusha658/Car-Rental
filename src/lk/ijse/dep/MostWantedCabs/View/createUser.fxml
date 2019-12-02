@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="settingsPane" prefHeight="432.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.MostWantedCabs.Controller.createUser">
+   <children>
+      <JFXTextField fx:id="txtUserName" layoutX="58.0" layoutY="59.0" prefHeight="25.0" prefWidth="317.0" promptText="User name" stylesheets="@Style/styleSheet.css" />
+      <JFXTextField fx:id="txtPassword" layoutX="58.0" layoutY="126.0" prefHeight="25.0" prefWidth="317.0" promptText="Password" stylesheets="@Style/styleSheet.css" />
+      <JFXButton fx:id="btnNew" layoutX="58.0" layoutY="307.0" onAction="#btnNewInOnAction" prefHeight="39.0" prefWidth="317.0" style="-fx-background-color: #40DFFF;" text="New " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtAddress" layoutX="58.0" layoutY="185.0" prefHeight="25.0" prefWidth="317.0" promptText="Address" stylesheets="@Style/styleSheet.css" />
+      <JFXTextField fx:id="txtContactNumber" layoutX="58.0" layoutY="251.0" prefHeight="25.0" prefWidth="317.0" promptText="Contact Number" stylesheets="@Style/styleSheet.css" />
+      <JFXButton fx:id="btnSignIn1" layoutX="58.0" layoutY="362.0" onAction="#btnSignInOnAction" prefHeight="39.0" prefWidth="317.0" style="-fx-background-color: #40DFFF;" text="Sign in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

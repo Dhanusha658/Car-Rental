@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anpDashBoard" prefHeight="633.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.MostWantedCabs.Controller.dashBoard">
+   <children>
+      <ImageView fitHeight="633.0" fitWidth="1348.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Assert/dark-blur-abstract-4k-v3-3840x2160.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgVehicles" fitHeight="223.0" fitWidth="301.0" focusTraversable="true" layoutX="34.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/1600x900_Fleet_Web_Header_14_tcm-11-895140(1).png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgDrivers" fitHeight="223.0" fitWidth="301.0" focusTraversable="true" layoutX="34.0" layoutY="368.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/shutterstock_116279278-1024x686.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgIssuVehicle" fitHeight="223.0" fitWidth="301.0" focusTraversable="true" layoutX="359.0" layoutY="368.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/New_Car.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgCustomer" fitHeight="223.0" fitWidth="301.0" focusTraversable="true" layoutX="692.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/best-car-buyers-sydney-1024x683.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgReturnVehicles" fitHeight="223.0" fitWidth="301.0" focusTraversable="true" layoutX="692.0" layoutY="368.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/lease-your-next-car.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgCategory" fitHeight="223.0" fitWidth="301.0" layoutX="359.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/The_Crew_Wild_Run_car_machine_video_games_Dodge_Challenger_Chevrolet_Corvette_Z06_McLaren_MP4_12C_Bentley_Continental_GT3-73776.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="666.0" layoutX="359.0" layoutY="34.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/mostwanted.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgOwner" fitHeight="223.0" fitWidth="301.0" focusTraversable="true" layoutX="1023.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/ec077d34485f47dba70797c01da48228_798x600.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgSearchVehicles" fitHeight="223.0" fitWidth="301.0" focusTraversable="true" layoutX="1023.0" layoutY="368.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../Assert/Super-Car-Wallpaper-groups-of-cars.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton fx:id="btnSetitngs" layoutX="1201.0" layoutY="14.0" onAction="#btnSettingsOnAction" prefHeight="45.0" prefWidth="132.0" text="Settings" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Assert/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

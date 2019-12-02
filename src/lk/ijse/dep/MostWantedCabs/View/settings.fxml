@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apeSignIn" prefHeight="444.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.MostWantedCabs.Controller.setting">
+    <children>
+        <ImageView fitHeight="488.0" fitWidth="792.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Assert/dark-blur-abstract-4k-v3-3840x2160.jpg" />
+            </image>
+        </ImageView>
+      <Pane fx:id="settingsPane" layoutX="302.0" layoutY="40.0" prefHeight="432.0" prefWidth="451.0" />
+      <JFXButton fx:id="createUser" layoutX="32.0" layoutY="70.0" onAction="#createUserOnAction" prefHeight="55.0" prefWidth="218.0" style="-fx-background-color: #dc0067;" text="Create user" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="resetPassword" layoutX="32.0" layoutY="161.0" onAction="#resetPasswordOnAction" prefHeight="55.0" prefWidth="218.0" style="-fx-background-color: #dc0067;" text="Reset the password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backupDatabase" layoutX="32.0" layoutY="258.0" onAction="#backupDatabaseOnAction" prefHeight="55.0" prefWidth="218.0" style="-fx-background-color: #dc0067;" text="Backup the database" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="restoreDatabase" layoutX="32.0" layoutY="363.0" onAction="#restoreDatabaseOnAction" prefHeight="55.0" prefWidth="218.0" style="-fx-background-color: #dc0067;" text="Restore the database" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

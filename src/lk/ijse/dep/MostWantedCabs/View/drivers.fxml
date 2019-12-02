@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apeDrivers" prefHeight="634.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.MostWantedCabs.Controller.drivers">
+    <children>
+        <ImageView fitHeight="634.0" fitWidth="1351.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Assert/dark-blur-abstract-4k-v3-3840x2160.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="590.0" layoutY="36.0" prefHeight="62.0" prefWidth="226.0" text="Add Driver" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="42.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtId" labelFloat="true" layoutX="50.0" layoutY="145.0" prefHeight="25.0" prefWidth="318.0" promptText="ID" stylesheets="@Style/styleSheet.css">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtFullName" labelFloat="true" layoutX="50.0" layoutY="211.0" prefHeight="25.0" prefWidth="318.0" promptText="Full Name" stylesheets="@Style/styleSheet.css" />
+        <JFXTextField fx:id="txtContactNumber" labelFloat="true" layoutX="50.0" layoutY="277.0" prefHeight="25.0" prefWidth="318.0" promptText="Contact Number" stylesheets="@Style/styleSheet.css" />
+        <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="50.0" layoutY="344.0" prefHeight="25.0" prefWidth="318.0" promptText="Address" stylesheets="@Style/styleSheet.css" />
+        <JFXButton fx:id="btnNew" layoutX="459.0" layoutY="575.0" onAction="#btnNewOnAction" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #40DFFF;" text="New" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnSave" layoutX="703.0" layoutY="575.0" onAction="#btnSaveOnAction" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #dc0067;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnDelete" layoutX="946.0" layoutY="575.0" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #dc0067;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnHome" layoutX="50.0" layoutY="47.0" onAction="#btnHomeOnAction" prefHeight="39.0" prefWidth="151.0" style="-fx-background-color: #40DFFF;" text="Home" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnReport" layoutX="1172.0" layoutY="575.0" onAction="#btnReportOnAction" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #40DFFF;" text="Report" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblDriver" layoutX="459.0" layoutY="152.0" prefHeight="409.0" prefWidth="853.0">
+            <columns>
+                <TableColumn prefWidth="67.0" text="ID" />
+                <TableColumn prefWidth="201.0" text="Full Name" />
+                <TableColumn prefWidth="111.0" text="Contact Number" />
+                <TableColumn prefWidth="158.0" text="Address" />
+            <TableColumn prefWidth="112.0" text="License Number" />
+            <TableColumn prefWidth="109.0" text="Salary per day" />
+            <TableColumn prefWidth="94.0" text="Statues" />
+            </columns>
+        </TableView>
+      <JFXTextField fx:id="txtSalaryPerDay" labelFloat="true" layoutX="50.0" layoutY="473.0" prefHeight="25.0" prefWidth="318.0" promptText="Salary per Day" stylesheets="@Style/styleSheet.css" />
+      <JFXTextField fx:id="txtLicenseCardNumber" labelFloat="true" layoutX="50.0" layoutY="409.0" prefHeight="25.0" prefWidth="318.0" promptText="License Card Number" stylesheets="@Style/styleSheet.css" />
+      <JFXTextField fx:id="txtStatues" labelFloat="true" layoutX="50.0" layoutY="536.0" prefHeight="25.0" prefWidth="318.0" promptText="Statues" stylesheets="@Style/styleSheet.css" />
+    </children>
+</AnchorPane>
