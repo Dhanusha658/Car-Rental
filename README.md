@@ -1,4 +1,4 @@
-# Renta car management system JPA <h1>
+# Renta car management system Hibernate <h1>
 
 # Prerequisites <h2>
 
